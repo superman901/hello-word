@@ -1,0 +1,4 @@
+predicted = [[index, x[1]] for index, x in enumerate(rf.predict(test), start = 1)]
+predicted = [[index, x] for index, x in enumerate(rf.predict(test), start = 1)]
+SSH2, OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.8
+192.168.1.115:22 (1)
