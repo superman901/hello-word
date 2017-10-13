@@ -1,6 +1,0 @@
-1，需要使用CANbus检测设备检测CANbus信息内容
-2.用CANTOOAPP软件对CAN数据的显示及控制，
-3，CANTOOAPP连接在 CAN总线上的CANTOOI装置采集的CAN信息发送到上位机，有上位机中CANTOOLAPP软件接收信息，显示在用户图形界面上。
-4.可以在App设定参数传送给下位机。
-
-
