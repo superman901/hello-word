@@ -211,3 +211,7 @@ boolean Checkframe(String frame,int n){//n=1，标准帧；n=0，扩展帧
   void C_eframe(){
     
   }
+
+
+
+https://github.com/xiandairuangong17/CANTool
