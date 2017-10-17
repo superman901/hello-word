@@ -1,10 +1,10 @@
-ï»¿#include<Math.h>
+#include<Math.h>
 
-boolean flag=false; //toolå¼€å¯æˆ–å…³é—­çŠ¶æ€æ ‡å¿—ä½
+boolean flag=false; //tool¿ªÆô»ò¹Ø±Õ×´Ì¬±êÖ¾Î»
 int S_speed=10;
-boolean busy=true;//CANæ€»çº¿æ˜¯å¦å¿™
-long numloop=0;//å‘¨æœŸå‘é€ä¸€ä¸ªå¸§ï¼Œè¿™æ˜¯è®¡æ•°loopï¼ˆï¼‰æ¬¡æ•°çš„æ ‡å¿—
-boolean dir=true;//å‘é€å¸§çš„æ–¹å‘
+boolean busy=true;//CAN×ÜÏßÊÇ·ñÃ¦
+long numloop=0;//ÖÜÆÚ·¢ËÍÒ»¸öÖ¡£¬ÕâÊÇ¼ÆÊıloop£¨£©´ÎÊıµÄ±êÖ¾
+boolean dir=true;//·¢ËÍÖ¡µÄ·½Ïò
 
 void setup() {
   
@@ -15,7 +15,7 @@ void setup() {
 }
 void loop() {
   
-  //è®¡å…¥è£…ç½®å¼€å¯çŠ¶æ€ä¸‹çš„loopæ¬¡æ•°ï¼Œç”ŸæˆæŠ˜çº¿æ•°æ®
+  //¼ÆÈë×°ÖÃ¿ªÆô×´Ì¬ÏÂµÄloop´ÎÊı£¬Éú³ÉÕÛÏßÊı¾İ
   if(flag){
    if(numloop%10000==0 ){
       Serial.println(numloop/10000);
@@ -36,23 +36,23 @@ void loop() {
 void serialEvent()
 {
      while(Serial.available() ){
-      String command=Serial.readStringUntil('\r');//æŒ‰ç…§\ræˆªå–å­—ç¬¦ä¸²
-      Serial.print(command);//æ–¹ä¾¿ä¸²å£è°ƒè¯•æ‰“å°å‘½ä»¤
+      String command=Serial.readStringUntil('\r');//°´ÕÕ\r½ØÈ¡×Ö·û´®
+      Serial.print(command);//·½±ã´®¿Úµ÷ÊÔ´òÓ¡ÃüÁî
       char c=command[0];
       if(c=='O'&& command[1]=='1'){
-        if(checklength(c,command.length())){        //å¤„ç†å‘½ä»¤é•¿åº¦é”™è¯¯ 
+        if(checklength(c,command.length())){        //´¦ÀíÃüÁî³¤¶È´íÎó 
           open_s();
         }
       }else if(c=='V'){
-        if(checklength(c,command.length())){        //å¤„ç†å‘½ä»¤é•¿åº¦é”™è¯¯ 
+        if(checklength(c,command.length())){        //´¦ÀíÃüÁî³¤¶È´íÎó 
           Serial.println("SV2.5-HV2.0");
         }
       }else if(c=='C'){
-        if(checklength(c,command.length())){        //å¤„ç†å‘½ä»¤é•¿åº¦é”™è¯¯ 
+        if(checklength(c,command.length())){        //´¦ÀíÃüÁî³¤¶È´íÎó 
           close_s();
         }
       }else if(c=='S'){ 
-        if(checklength(c,command.length())){        //å¤„ç†å‘½ä»¤é•¿åº¦é”™è¯¯ 
+        if(checklength(c,command.length())){        //´¦ÀíÃüÁî³¤¶È´íÎó 
           Changespeed(command[1]);
         }
       }else if(c=='t' && busy){
@@ -69,7 +69,7 @@ void serialEvent()
 void open_s(){
   if(!flag){
     flag=true;
-    //è¿”å›æˆåŠŸ
+    //·µ»Ø³É¹¦
     success();
     return;
   }
@@ -79,7 +79,7 @@ void open_s(){
 void close_s(){
   if(flag){
     flag=false;
-    //è¿”å›æˆåŠŸ
+    //·µ»Ø³É¹¦
     success();
     return;
   }
@@ -90,12 +90,12 @@ void Changespeed(char NO_speed){
 //  Serial.println(NO_speed);
    if(flag){
     int num[]={10,20,50,100,125,250,500,800,1000};
-    if(NO_speed<'0' or NO_speed>'8'){//è¿”å›é”™è¯¯
+    if(NO_speed<'0' or NO_speed>'8'){//·µ»Ø´íÎó
       fail();
     }else{
       int pos_speed=int(NO_speed-'0');
       S_speed=num[pos_speed];
-      //è¿”å›æˆåŠŸ
+      //·µ»Ø³É¹¦
       success();
     }
   }else{
@@ -106,7 +106,7 @@ void Changespeed(char NO_speed){
 void Sendstandardframe(String standardframe){
   Serial.println(standardframe);
   if(Checkframe(standardframe,1)){
-    Serial.println("å‘CANæ€»çº¿å‘é€è¯¥æ ‡å‡†å¸§"); 
+    Serial.println("ÏòCAN×ÜÏß·¢ËÍ¸Ã±ê×¼Ö¡"); 
     success();
   }else
     fail();
@@ -114,7 +114,7 @@ void Sendstandardframe(String standardframe){
 void Sendexternalframe(String externalframe){
   Serial.println(externalframe);
   if(Checkframe(externalframe,0)){
-    Serial.println("å‘CANæ€»çº¿å‘é€è¯¥æ‰©å±•å¸§"); 
+    Serial.println("ÏòCAN×ÜÏß·¢ËÍ¸ÃÀ©Õ¹Ö¡"); 
     success();
   }else
     fail();
@@ -130,7 +130,7 @@ void fail(){
   Serial.print(char(0x07));
 }
 
-boolean Checkframe(String frame,int n){//n=1ï¼Œæ ‡å‡†å¸§ï¼›n=0ï¼Œæ‰©å±•å¸§
+boolean Checkframe(String frame,int n){//n=1£¬±ê×¼Ö¡£»n=0£¬À©Õ¹Ö¡
   int idlen;
   if(n==1){
     idlen=3;
@@ -152,7 +152,7 @@ boolean Checkframe(String frame,int n){//n=1ï¼Œæ ‡å‡†å¸§ï¼›n=0ï¼Œæ‰©å±•å¸§
     String period=frame.substring(length_f*2+idlen+2,length_f*2+idlen+6);
     Serial.println(period);
     float timep=0;    char temp='0';
-    //æ ‡å‡†å¸§id[0]åœ¨0-0x7FFä¹‹ä¸­,æ‰©å±•å¸§åœ¨ï¼ˆ00000000-1FFFFFFF) ä¹‹ä¸­
+    //±ê×¼Ö¡id[0]ÔÚ0-0x7FFÖ®ÖĞ,À©Õ¹Ö¡ÔÚ£¨00000000-1FFFFFFF) Ö®ÖĞ
     if(n==1 && (id[0]>='8' || id[0]<'0')){
         return false;
     }else if(n==1 && (id[0]!='0' && id[0]!='1')){
@@ -163,7 +163,7 @@ boolean Checkframe(String frame,int n){//n=1ï¼Œæ ‡å‡†å¸§ï¼›n=0ï¼Œæ‰©å±•å¸§
         return false;
       }
     }
-    //æ ‡å‡†å¸§dataå’Œå‘¨æœŸåœ¨'0'-'F'ä¹‹é—´
+    //±ê×¼Ö¡dataºÍÖÜÆÚÔÚ'0'-'F'Ö®¼ä
     for(int i=2+idlen;i<length_f*2+idlen+6;i++){
       if(frame[i]>'F' || frame[i]<'0' || (frame[i]<'A' && frame[i]>'9')){
         return false;        
@@ -172,7 +172,7 @@ boolean Checkframe(String frame,int n){//n=1ï¼Œæ ‡å‡†å¸§ï¼›n=0ï¼Œæ‰©å±•å¸§
     if(frame.length()!=(idlen+6+length_f*2)){
       return false;
     }else{
-          //è®¡ç®—è¯¥å¸§çš„å‘é€å‘¨æœŸ
+          //¼ÆËã¸ÃÖ¡µÄ·¢ËÍÖÜÆÚ
       for(int i=0;i<4;i++){
         float temp16=pow(16,(3-i));
         if(period[i]>='0' && period[i]<='9'){
@@ -203,7 +203,7 @@ boolean Checkframe(String frame,int n){//n=1ï¼Œæ ‡å‡†å¸§ï¼›n=0ï¼Œæ‰©å±•å¸§
     return result;
   }
 /**
- * æŒ‰å‘¨æœŸç”Ÿæˆæ ‡å‡†å¸§å’Œæ‰©å±•å¸§å‘é€ç»™App
+ * °´ÖÜÆÚÉú³É±ê×¼Ö¡ºÍÀ©Õ¹Ö¡·¢ËÍ¸øApp
  */
   void C_sframe(){
     
