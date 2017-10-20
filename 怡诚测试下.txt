@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class chuli {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 System.out.print("请输入数据：");
+		 Scanner chuli = new Scanner(System.in);
+		 String shuju=chuli.next();
+		 if(shuju.equals("V\\r"))
+		 {
+			 shuju="SV2.5-HV2.0\r";
+			 System.out.print(shuju);
+		 }
+		 else if(shuju.equals("O1\\r")==true)
+		 {
+			 shuju="\r";
+		 }
+		 else if(shuju.equals("Sn\\r"))
+		 {
+			 shuju="\r";
+		 }
+		 else if(shuju.equals("C\\r"))
+		 {
+			 shuju="\r";
+		 }
+		 else if(shuju.equals("C\\r"))
+		 {
+			 shuju="\r";
+		 }
+		 System.out.print("你输入的数据为："+shuju);
+	}
+
+}
