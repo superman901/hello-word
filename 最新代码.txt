@@ -1,4 +1,4 @@
-Ôªø#include<math.h>
+#include<math.h>
 // send to App
 //char datas[] = "t36080000000025001100t03D80000000000000001t36480000000003005B24t31880000000000000000t34580000000000000000t36080000000000002800t3608000000B500001A01t36080000000000140004t36080000000047130502t32180000000000009B00t3218002000000403768Et36386700004F0080791Et42B800000000009B0675t420800000000000000AFt03D8000000000000000Ct31D80000000000000004t3938000000003C000000t31880000000000000003t42B80100000000FA0395t3638C010002F00000000";
 // receive the data from App
@@ -8,20 +8,20 @@ char buffer[25];
 boolean flag=false;  // this is off-on
 int  speed=10;
 boolean busy=true; // judge highway is or not busy  
-long num_loop=0;  // loop's compute label
+long numloop=0;  // loop's compute label
 boolean dir=true; //the direction of send frame
 
 void blink_p(String per){
     digitalWrite(LED_BUILTIN, HIGH);   // turn on the LED(HIGH is the voltage level)
     delay(per.toInt()/2);           // wait for a second
     digitalWrite(LED_BUILTIN, LOW);    // turn off the LED  by making the voltage LOW
-	delay(per.toInt()/2);         // wait for a second
+  delay(per.toInt()/2);         // wait for a second
 }
-void success(){   					// it is success
+void success(){             // it is success
   Serial.print("success");
   Serial.print("\r");
 }
-void failure(){						// it is failure
+void failure(){           // it is failure
   Serial.print("failure");
   Serial.print(char(0x07));
 }
@@ -37,15 +37,14 @@ void closeA(){
 }
 
 void Change_speed(char sped){
-	int pos_sped = 0;
-	int num[];
+  int pos_sped = 0;
     if(flag==true){
-		num[]={10,20,50,100,125,250,500,800,1000};
+    int num[]={10,20,50,100,125,250,500,800,1000};
     if( sped < '0' or sped > '8'){
       failure();
     }else{
       pos_sped = int(sped - '0');
-      speed = num[pos_speed];
+      speed = num[pos_sped];
       success();
     }
   }else{
@@ -57,7 +56,7 @@ void Sendstandardframe(String stand){
   Serial.println(stand);
   if(Check_frame(stand,1)){
     Serial.print("send the standar_frame"); 
-	Serial.println();
+  Serial.println();
   }
 }
 
@@ -65,13 +64,13 @@ void Send_external_frame(String external){
   Serial.println(external);
   if(Check_frame(external,0)){
     Serial.print("sends the external frame");
-	Serial.println();
+  Serial.println();
   }
 }
 
-// check: n=1 standard frame;n=0Ôºåexternal frame
+// check: n=1 standard frame;n=0£¨external frame
 boolean Check_frame(String frame,int n){   
-	int F_length;
+  int F_length;
   if(n==1){
     Serial.print("standard:");
     String id = frame.substring(1,4);
@@ -80,7 +79,7 @@ boolean Check_frame(String frame,int n){
     F_length = frame.substring(4,5).toInt();
     Serial.print(F_length);
     Serial.print(" ");
-	
+  
     String data=frame.substring(5,F_length*2+5);
     Serial.print(data);
     Serial.print(" ");
@@ -105,7 +104,7 @@ boolean Check_frame(String frame,int n){
     Serial.print(" ");
     String per=frame.substring(F_length*2+10,F_length*2+14);
     Serial.print(per);
-	Serial.println();
+    Serial.println();
     if(frame.length() != (14+F_length*2)){
       return false;
     }else{
@@ -119,17 +118,17 @@ void print(int x){
     else
       Serial.write('A'+x-10);
   }
-  //Â∞ÜxËΩ¨Âèò‰∏∫k‰ΩçÁöÑ16ËøõÂà∂ËæìÂá∫
+  //Ω´x◊™±‰Œ™kŒªµƒ16Ω¯÷∆ ‰≥ˆ
 void Transform(unsigned long long x,int k){
     for(int i=k-1;i>=0;i--)
-      print((x>>(i*4))&15); //xÂè≥Áßªi*4‰ΩçÁÑ∂Âêé‰∏é‰∏ä1111ÔºàÂç≥Â∞Ü16ËøõÂà∂Êï∞ËΩ¨Êç¢Êàê‰∫åËøõÂà∂Êï∞Ôºâ
+      print((x>>(i*4))&15); //x”““∆i*4Œª»ª∫Û”Î…œ1111£®º¥Ω´16Ω¯÷∆ ˝◊™ªª≥…∂˛Ω¯÷∆ ˝£©
   }
 void C_sframe(int k){
     Serial.write("t");
     Transform(100,3);
     Transform(8,1);
-    unsigned long long a=k*50; //aÁöÑÂÅèÁßªÈáè
-    unsigned long long b=200-k; //bÁöÑÂÅèÁßªÈáè
+    unsigned long long a=k*50; //aµƒ∆´“∆¡ø
+    unsigned long long b=200-k; //bµƒ∆´“∆¡ø
     Transform(0,10);
     Transform(b,2);
     Transform(a,4);
@@ -146,26 +145,26 @@ void loop() {
       String command=Serial.readStringUntil('\r');
       Serial.print(command);
       char c=command[0];
-      if(c=='O'){
+      if(c=='O'&& command[1]=='l'){
         if(command.length()!=1){
-          failure();
-        }else{
           openA();
+        }else{
+          failure();
         }
       }else if(c=='V'){ 
         if(command.length()!=1){
           failure();
         }else{
           Serial.print("SV2.5-HV2.0");
-		  Serial.println();
-		}
+      Serial.println();
+    }
       }else if(c=='C'){
         if(command.length()!=1){
           failure();
         }else{
           closeA();
         }
-      }else if(c=='S'){
+      }else if(c=='V'&& command[1]=='n'){
         if(command.length()!=2){
           failure();
         }else{
@@ -174,16 +173,16 @@ void loop() {
       }else if(c=='t' && busy){
         Sendstandardframe(command);
       }else if(c=='T' && busy){
-        Sendexternalframe(command);
+        Send_external_frame(command);
       }else{
         failure();
       }
   }
 //draw the graph
-  /*if(flag){
-	if(numloop%100000==0 ){
+  if(flag){
+  if(numloop%100000==0 ){
       Serial.println(numloop/10000);
-      float cur=(num/10000,0,10,0,)
+      float cur=(numloop/10000,0,10,0);
       C_sframe(numloop/100000);
     }
     if(dir ){
@@ -197,7 +196,7 @@ void loop() {
     if(numloop<=0){
       dir=true;
     }
-  }							*/
+  }             
 }
 
 
