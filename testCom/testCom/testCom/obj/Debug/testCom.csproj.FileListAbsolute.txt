@@ -16,3 +16,6 @@ E:\Cantool\testCom\testCom\testCom\obj\Debug\testCom.csprojResolveAssemblyRefere
 E:\Cantool\testCom\testCom\testCom\obj\Debug\testCom.Form1.resources
 E:\Cantool\testCom\testCom\testCom\obj\Debug\testCom.Properties.Resources.resources
 E:\Cantool\testCom\testCom\testCom\obj\Debug\testCom.csproj.GenerateResource.Cache
+E:\wo\CanToolAPP_CS\testCom\testCom\testCom\bin\Debug\testCom.exe.config
+E:\wo\CanToolAPP_CS\testCom\testCom\testCom\obj\Debug\testCom.exe
+E:\wo\CanToolAPP_CS\testCom\testCom\testCom\obj\Debug\testCom.pdb
