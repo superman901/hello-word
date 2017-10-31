@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+ "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta content="urn:uuid:4b1d3003-7c1b-4db7-81de-0a4b4657f6c3" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>构建之法：现代软件工程</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+      <navLabel>
+        <text>推荐序</text>
+      </navLabel>
+      <content src="Text/i.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-2" playOrder="2">
+      <navLabel>
+        <text>读者反馈</text>
+      </navLabel>
+      <content src="Text/ii.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-3" playOrder="3">
+      <navLabel>
+        <text>前言</text>
+      </navLabel>
+      <content src="Text/iii.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-4" playOrder="4">
+      <navLabel>
+        <text>多看版前言</text>
+      </navLabel>
+      <content src="Text/iii.xhtml#-"/>
+    </navPoint>
+    <navPoint id="navPoint-5" playOrder="5">
+      <navLabel>
+        <text>给任课老师和助教的建议</text>
+      </navLabel>
+      <content src="Text/iv.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-6" playOrder="6">
+      <navLabel>
+        <text>第1章 概论</text>
+      </navLabel>
+      <content src="Text/1.xhtml"/>
+      <navPoint id="navPoint-7" playOrder="7">
+        <navLabel>
+          <text>1.1 软件=程序+软件工程</text>
+        </navLabel>
+        <content src="Text/1.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-8" playOrder="8">
+        <navLabel>
+          <text>1.2 软件工程是什么</text>
+        </navLabel>
+        <content src="Text/1.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-9" playOrder="9">
+        <navLabel>
+          <text>1.3 练习与讨论</text>
+        </navLabel>
+        <content src="Text/1.3.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-10" playOrder="10">
+      <navLabel>
+        <text>第2章 个人技术和流程</text>
+      </navLabel>
+      <content src="Text/2.xhtml"/>
+      <navPoint id="navPoint-11" playOrder="11">
+        <navLabel>
+          <text>2.1 单元测试</text>
+        </navLabel>
+        <content src="Text/2.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-12" playOrder="12">
+        <navLabel>
+          <text>2.2 效能分析工具</text>
+        </navLabel>
+        <content src="Text/2.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-13" playOrder="13">
+        <navLabel>
+          <text>2.3 个人开发流程</text>
+        </navLabel>
+        <content src="Text/2.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-14" playOrder="14">
+        <navLabel>
+          <text>2.4 实践</text>
+        </navLabel>
+        <content src="Text/2.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-15" playOrder="15">
+        <navLabel>
+          <text>2.5 练习与讨论</text>
+        </navLabel>
+        <content src="Text/2.5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-16" playOrder="16">
+      <navLabel>
+        <text>第3章 软件工程师的成长</text>
+      </navLabel>
+      <content src="Text/3.xhtml"/>
+      <navPoint id="navPoint-17" playOrder="17">
+        <navLabel>
+          <text>3.1 个人能力的衡量与发展</text>
+        </navLabel>
+        <content src="Text/3.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-18" playOrder="18">
+        <navLabel>
+          <text>3.2 软件工程师的职业发展</text>
+        </navLabel>
+        <content src="Text/3.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-19" playOrder="19">
+        <navLabel>
+          <text>3.3 技能的反面</text>
+        </navLabel>
+        <content src="Text/3.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-20" playOrder="20">
+        <navLabel>
+          <text>3.4 练习与讨论</text>
+        </navLabel>
+        <content src="Text/3.4.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-21" playOrder="21">
+      <navLabel>
+        <text>第4章 两人合作</text>
+      </navLabel>
+      <content src="Text/4.xhtml"/>
+      <navPoint id="navPoint-22" playOrder="22">
+        <navLabel>
+          <text>4.1 代码规范</text>
+        </navLabel>
+        <content src="Text/4.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-23" playOrder="23">
+        <navLabel>
+          <text>4.2 代码风格规范</text>
+        </navLabel>
+        <content src="Text/4.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-24" playOrder="24">
+        <navLabel>
+          <text>4.3 代码设计规范</text>
+        </navLabel>
+        <content src="Text/4.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-25" playOrder="25">
+        <navLabel>
+          <text>4.4 代码复审</text>
+        </navLabel>
+        <content src="Text/4.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-26" playOrder="26">
+        <navLabel>
+          <text>4.5 结对编程</text>
+        </navLabel>
+        <content src="Text/4.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-27" playOrder="27">
+        <navLabel>
+          <text>4.6 两人合作的不同阶段和技巧</text>
+        </navLabel>
+        <content src="Text/4.6.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-28" playOrder="28">
+      <navLabel>
+        <text>第5章 团队和流程</text>
+      </navLabel>
+      <content src="Text/5.xhtml"/>
+      <navPoint id="navPoint-29" playOrder="29">
+        <navLabel>
+          <text>5.1 非团队和团队</text>
+        </navLabel>
+        <content src="Text/5.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-30" playOrder="30">
+        <navLabel>
+          <text>5.2 软件团队的模式</text>
+        </navLabel>
+        <content src="Text/5.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-31" playOrder="31">
+        <navLabel>
+          <text>5.3 开发流程</text>
+        </navLabel>
+        <content src="Text/5.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-32" playOrder="32">
+        <navLabel>
+          <text>5.4 练习与讨论</text>
+        </navLabel>
+        <content src="Text/5.4.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-33" playOrder="33">
+      <navLabel>
+        <text>第6章 敏捷流程</text>
+      </navLabel>
+      <content src="Text/6.xhtml"/>
+      <navPoint id="navPoint-34" playOrder="34">
+        <navLabel>
+          <text>6.1 敏捷的流程</text>
+        </navLabel>
+        <content src="Text/6.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-35" playOrder="35">
+        <navLabel>
+          <text>6.2 敏捷流程的问题和解法</text>
+        </navLabel>
+        <content src="Text/6.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-36" playOrder="36">
+        <navLabel>
+          <text>6.3 敏捷的团队</text>
+        </navLabel>
+        <content src="Text/6.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-37" playOrder="37">
+        <navLabel>
+          <text>6.4 敏捷总结</text>
+        </navLabel>
+        <content src="Text/6.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-38" playOrder="38">
+        <navLabel>
+          <text>6.5 敏捷的故事——兼酒后问答</text>
+        </navLabel>
+        <content src="Text/6.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-39" playOrder="39">
+        <navLabel>
+          <text>6.6 练习与讨论</text>
+        </navLabel>
+        <content src="Text/6.6.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-40" playOrder="40">
+      <navLabel>
+        <text>第7章 MSF</text>
+      </navLabel>
+      <content src="Text/7.xhtml"/>
+      <navPoint id="navPoint-41" playOrder="41">
+        <navLabel>
+          <text>7.1 MSF简史</text>
+        </navLabel>
+        <content src="Text/7.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-42" playOrder="42">
+        <navLabel>
+          <text>7.2 MSF基本原则</text>
+        </navLabel>
+        <content src="Text/7.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-43" playOrder="43">
+        <navLabel>
+          <text>7.3 MSF团队模型</text>
+        </navLabel>
+        <content src="Text/7.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-44" playOrder="44">
+        <navLabel>
+          <text>7.5 MSF敏捷开发模式</text>
+        </navLabel>
+        <content src="Text/7.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-45" playOrder="45">
+        <navLabel>
+          <text>7.6 MSF CMMI开发模式</text>
+        </navLabel>
+        <content src="Text/7.6.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-46" playOrder="46">
+        <navLabel>
+          <text>7.7 练习与讨论</text>
+        </navLabel>
+        <content src="Text/7.7.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-47" playOrder="47">
+      <navLabel>
+        <text>第8章 需求分析</text>
+      </navLabel>
+      <content src="Text/8.xhtml"/>
+      <navPoint id="navPoint-48" playOrder="48">
+        <navLabel>
+          <text>8.1 软件需求</text>
+        </navLabel>
+        <content src="Text/8.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-49" playOrder="49">
+        <navLabel>
+          <text>8.2 软件产品的利益相关者</text>
+        </navLabel>
+        <content src="Text/8.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-50" playOrder="50">
+        <navLabel>
+          <text>8.3 获取用户需求——用户调查</text>
+        </navLabel>
+        <content src="Text/8.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-51" playOrder="51">
+        <navLabel>
+          <text>8.4 竞争性需求分析的框架</text>
+        </navLabel>
+        <content src="Text/8.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-52" playOrder="52">
+        <navLabel>
+          <text>8.5 功能的定位和优先级</text>
+        </navLabel>
+        <content src="Text/8.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-53" playOrder="53">
+        <navLabel>
+          <text>8.6 计划和估计</text>
+        </navLabel>
+        <content src="Text/8.6.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-54" playOrder="54">
+        <navLabel>
+          <text>8.7 分而治之（Work Breakdown Structure）</text>
+        </navLabel>
+        <content src="Text/8.7.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-55" playOrder="55">
+        <navLabel>
+          <text>8.8 练习与讨论</text>
+        </navLabel>
+        <content src="Text/8.8.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-56" playOrder="56">
+      <navLabel>
+        <text>第9章 项目经理</text>
+      </navLabel>
+      <content src="Text/9.xhtml"/>
+      <navPoint id="navPoint-57" playOrder="57">
+        <navLabel>
+          <text>9.1 PM是啥</text>
+        </navLabel>
+        <content src="Text/9.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-58" playOrder="58">
+        <navLabel>
+          <text>9.2 微软PM的来历</text>
+        </navLabel>
+        <content src="Text/9.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-59" playOrder="59">
+        <navLabel>
+          <text>9.3 PM做开发和测试之外的所有事情</text>
+        </navLabel>
+        <content src="Text/9.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-60" playOrder="60">
+        <navLabel>
+          <text>9.4 PM和风险管理</text>
+        </navLabel>
+        <content src="Text/9.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-61" playOrder="61">
+        <navLabel>
+          <text>9.5 PM的能力要求和任务</text>
+        </navLabel>
+        <content src="Text/9.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-62" playOrder="62">
+        <navLabel>
+          <text>9.6 练习与讨论</text>
+        </navLabel>
+        <content src="Text/9.6.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-63" playOrder="63">
+      <navLabel>
+        <text>第10章 典型用户和场景</text>
+      </navLabel>
+      <content src="Text/10.xhtml"/>
+      <navPoint id="navPoint-64" playOrder="64">
+        <navLabel>
+          <text>10.1 典型用户和典型场景</text>
+        </navLabel>
+        <content src="Text/10.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-65" playOrder="65">
+        <navLabel>
+          <text>10.2 用例（Use Case）</text>
+        </navLabel>
+        <content src="Text/10.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-66" playOrder="66">
+        <navLabel>
+          <text>10.3 规格说明书</text>
+        </navLabel>
+        <content src="Text/10.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-67" playOrder="67">
+        <navLabel>
+          <text>10.4 功能驱动的设计</text>
+        </navLabel>
+        <content src="Text/10.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-68" playOrder="68">
+        <navLabel>
+          <text>10.5 练习与讨论</text>
+        </navLabel>
+        <content src="Text/10.5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-69" playOrder="69">
+      <navLabel>
+        <text>第11章 软件设计与实现</text>
+      </navLabel>
+      <content src="Text/11.xhtml"/>
+      <navPoint id="navPoint-70" playOrder="70">
+        <navLabel>
+          <text>11.1 分析和设计方法</text>
+        </navLabel>
+        <content src="Text/11.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-71" playOrder="71">
+        <navLabel>
+          <text>11.2 图形建模和分析方法</text>
+        </navLabel>
+        <content src="Text/11.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-72" playOrder="72">
+        <navLabel>
+          <text>11.3 其他设计方法</text>
+        </navLabel>
+        <content src="Text/11.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-73" playOrder="73">
+        <navLabel>
+          <text>11.4 从Spec到实现</text>
+        </navLabel>
+        <content src="Text/11.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-74" playOrder="74">
+        <navLabel>
+          <text>11.5 开发阶段的日常管理</text>
+        </navLabel>
+        <content src="Text/11.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-75" playOrder="75">
+        <navLabel>
+          <text>11.6 练习与讨论</text>
+        </navLabel>
+        <content src="Text/11.6.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-76" playOrder="76">
+      <navLabel>
+        <text>第12章 用户体验</text>
+      </navLabel>
+      <content src="Text/12.xhtml"/>
+      <navPoint id="navPoint-77" playOrder="77">
+        <navLabel>
+          <text>12.1 用户体验的要素</text>
+        </navLabel>
+        <content src="Text/12.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-78" playOrder="78">
+        <navLabel>
+          <text>12.2 用户体验设计的步骤和目标</text>
+        </navLabel>
+        <content src="Text/12.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-79" playOrder="79">
+        <navLabel>
+          <text>12.3 评价标准</text>
+        </navLabel>
+        <content src="Text/12.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-80" playOrder="80">
+        <navLabel>
+          <text>12.4 练习与讨论</text>
+        </navLabel>
+        <content src="Text/12.4.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-81" playOrder="81">
+      <navLabel>
+        <text>第13章 软件测试</text>
+      </navLabel>
+      <content src="Text/13.xhtml"/>
+      <navPoint id="navPoint-82" playOrder="82">
+        <navLabel>
+          <text>13.1 基本名词解释及分类</text>
+        </navLabel>
+        <content src="Text/13.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-83" playOrder="83">
+        <navLabel>
+          <text>13.2 各种测试方法</text>
+        </navLabel>
+        <content src="Text/13.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-84" playOrder="84">
+        <navLabel>
+          <text>13.3 实战中的测试</text>
+        </navLabel>
+        <content src="Text/13.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-85" playOrder="85">
+        <navLabel>
+          <text>13.4 运用测试工具</text>
+        </navLabel>
+        <content src="Text/13.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-86" playOrder="86">
+        <navLabel>
+          <text>13.5 练习与讨论</text>
+        </navLabel>
+        <content src="Text/13.5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-87" playOrder="87">
+      <navLabel>
+        <text>第14章 质量保障</text>
+      </navLabel>
+      <content src="Text/14.xhtml"/>
+      <navPoint id="navPoint-88" playOrder="88">
+        <navLabel>
+          <text>14.1 软件的质量</text>
+        </navLabel>
+        <content src="Text/14.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-89" playOrder="89">
+        <navLabel>
+          <text>14.2 软件的质量保障工作</text>
+        </navLabel>
+        <content src="Text/14.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-90" playOrder="90">
+        <navLabel>
+          <text>14.3 练习与讨论</text>
+        </navLabel>
+        <content src="Text/14.3.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-91" playOrder="91">
+      <navLabel>
+        <text>第15章 稳定和发布阶段</text>
+      </navLabel>
+      <content src="Text/15.xhtml"/>
+      <navPoint id="navPoint-92" playOrder="92">
+        <navLabel>
+          <text>15.1 从代码完成到发布</text>
+        </navLabel>
+        <content src="Text/15.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-93" playOrder="93">
+        <navLabel>
+          <text>15.2 发布之后——事后诸葛亮会议</text>
+        </navLabel>
+        <content src="Text/15.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-94" playOrder="94">
+        <navLabel>
+          <text>15.4 练习和讨论</text>
+        </navLabel>
+        <content src="Text/15.4.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-95" playOrder="95">
+      <navLabel>
+        <text>第16章 IT行业的创新</text>
+      </navLabel>
+      <content src="Text/16.xhtml"/>
+      <navPoint id="navPoint-96" playOrder="96">
+        <navLabel>
+          <text>16.1 创新的迷思</text>
+        </navLabel>
+        <content src="Text/16.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-97" playOrder="97">
+        <navLabel>
+          <text>16.2 创新的时机</text>
+        </navLabel>
+        <content src="Text/16.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-98" playOrder="98">
+        <navLabel>
+          <text>16.3 创新的招数</text>
+        </navLabel>
+        <content src="Text/16.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-99" playOrder="99">
+        <navLabel>
+          <text>16.4 魔方的创新</text>
+        </navLabel>
+        <content src="Text/16.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-100" playOrder="100">
+        <navLabel>
+          <text>16.5 创新和作坊</text>
+        </navLabel>
+        <content src="Text/16.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-101" playOrder="101">
+        <navLabel>
+          <text>16.6 练习与讨论</text>
+        </navLabel>
+        <content src="Text/16.6.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-102" playOrder="102">
+      <navLabel>
+        <text>第17章 人、绩效和职业道德</text>
+      </navLabel>
+      <content src="Text/17.xhtml"/>
+      <navPoint id="navPoint-103" playOrder="103">
+        <navLabel>
+          <text>17.1 猪、鸡和鹦鹉的故事</text>
+        </navLabel>
+        <content src="Text/17.1.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-104" playOrder="104">
+        <navLabel>
+          <text>17.2 其实还是人的问题</text>
+        </navLabel>
+        <content src="Text/17.2.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-105" playOrder="105">
+        <navLabel>
+          <text>17.3 绩效管理</text>
+        </navLabel>
+        <content src="Text/17.3.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-106" playOrder="106">
+        <navLabel>
+          <text>17.4 萝卜与白菜</text>
+        </navLabel>
+        <content src="Text/17.4.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-107" playOrder="107">
+        <navLabel>
+          <text>17.5 团队合作的几个阶段</text>
+        </navLabel>
+        <content src="Text/17.5.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-108" playOrder="108">
+        <navLabel>
+          <text>17.6 软件工程师的职业道德</text>
+        </navLabel>
+        <content src="Text/17.6.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint-109" playOrder="109">
+        <navLabel>
+          <text>17.7 练习与讨论</text>
+        </navLabel>
+        <content src="Text/17.7.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint-110" playOrder="110">
+      <navLabel>
+        <text>索引</text>
+      </navLabel>
+      <content src="Text/a.xhtml"/>
+      <navPoint id="navPoint-111" playOrder="111">
+        <navLabel>
+          <text>A</text>
+        </navLabel>
+        <content src="Text/a.xhtml#a"/>
+      </navPoint>
+      <navPoint id="navPoint-112" playOrder="112">
+        <navLabel>
+          <text>B</text>
+        </navLabel>
+        <content src="Text/a.xhtml#b"/>
+      </navPoint>
+      <navPoint id="navPoint-113" playOrder="113">
+        <navLabel>
+          <text>C</text>
+        </navLabel>
+        <content src="Text/a.xhtml#c"/>
+      </navPoint>
+      <navPoint id="navPoint-114" playOrder="114">
+        <navLabel>
+          <text>D</text>
+        </navLabel>
+        <content src="Text/a.xhtml#d"/>
+      </navPoint>
+      <navPoint id="navPoint-115" playOrder="115">
+        <navLabel>
+          <text>E</text>
+        </navLabel>
+        <content src="Text/a.xhtml#e"/>
+      </navPoint>
+      <navPoint id="navPoint-116" playOrder="116">
+        <navLabel>
+          <text>F</text>
+        </navLabel>
+        <content src="Text/a.xhtml#f"/>
+      </navPoint>
+      <navPoint id="navPoint-117" playOrder="117">
+        <navLabel>
+          <text>G</text>
+        </navLabel>
+        <content src="Text/a.xhtml#g"/>
+      </navPoint>
+      <navPoint id="navPoint-118" playOrder="118">
+        <navLabel>
+          <text>H</text>
+        </navLabel>
+        <content src="Text/a.xhtml#h"/>
+      </navPoint>
+      <navPoint id="navPoint-119" playOrder="119">
+        <navLabel>
+          <text>I</text>
+        </navLabel>
+        <content src="Text/a.xhtml#i"/>
+      </navPoint>
+      <navPoint id="navPoint-120" playOrder="120">
+        <navLabel>
+          <text>J</text>
+        </navLabel>
+        <content src="Text/a.xhtml#j"/>
+      </navPoint>
+      <navPoint id="navPoint-121" playOrder="121">
+        <navLabel>
+          <text>K</text>
+        </navLabel>
+        <content src="Text/a.xhtml#k"/>
+      </navPoint>
+      <navPoint id="navPoint-122" playOrder="122">
+        <navLabel>
+          <text>L</text>
+        </navLabel>
+        <content src="Text/a.xhtml#l"/>
+      </navPoint>
+      <navPoint id="navPoint-123" playOrder="123">
+        <navLabel>
+          <text>M</text>
+        </navLabel>
+        <content src="Text/a.xhtml#m"/>
+      </navPoint>
+      <navPoint id="navPoint-124" playOrder="124">
+        <navLabel>
+          <text>N</text>
+        </navLabel>
+        <content src="Text/a.xhtml#n"/>
+      </navPoint>
+      <navPoint id="navPoint-125" playOrder="125">
+        <navLabel>
+          <text>O</text>
+        </navLabel>
+        <content src="Text/a.xhtml#o"/>
+      </navPoint>
+      <navPoint id="navPoint-126" playOrder="126">
+        <navLabel>
+          <text>P</text>
+        </navLabel>
+        <content src="Text/a.xhtml#p"/>
+      </navPoint>
+      <navPoint id="navPoint-127" playOrder="127">
+        <navLabel>
+          <text>Q</text>
+        </navLabel>
+        <content src="Text/a.xhtml#q"/>
+      </navPoint>
+      <navPoint id="navPoint-128" playOrder="128">
+        <navLabel>
+          <text>R</text>
+        </navLabel>
+        <content src="Text/a.xhtml#r"/>
+      </navPoint>
+      <navPoint id="navPoint-129" playOrder="129">
+        <navLabel>
+          <text>S</text>
+        </navLabel>
+        <content src="Text/a.xhtml#s"/>
+      </navPoint>
+      <navPoint id="navPoint-130" playOrder="130">
+        <navLabel>
+          <text>T</text>
+        </navLabel>
+        <content src="Text/a.xhtml#t"/>
+      </navPoint>
+      <navPoint id="navPoint-131" playOrder="131">
+        <navLabel>
+          <text>U</text>
+        </navLabel>
+        <content src="Text/a.xhtml#u"/>
+      </navPoint>
+      <navPoint id="navPoint-132" playOrder="132">
+        <navLabel>
+          <text>V</text>
+        </navLabel>
+        <content src="Text/a.xhtml#v"/>
+      </navPoint>
+      <navPoint id="navPoint-133" playOrder="133">
+        <navLabel>
+          <text>W</text>
+        </navLabel>
+        <content src="Text/a.xhtml#w"/>
+      </navPoint>
+      <navPoint id="navPoint-134" playOrder="134">
+        <navLabel>
+          <text>X</text>
+        </navLabel>
+        <content src="Text/a.xhtml#x"/>
+      </navPoint>
+      <navPoint id="navPoint-135" playOrder="135">
+        <navLabel>
+          <text>Y</text>
+        </navLabel>
+        <content src="Text/a.xhtml#y"/>
+      </navPoint>
+      <navPoint id="navPoint-136" playOrder="136">
+        <navLabel>
+          <text>Z</text>
+        </navLabel>
+        <content src="Text/a.xhtml#z"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
